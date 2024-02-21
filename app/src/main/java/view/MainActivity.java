@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     PessoaController controller;
 
     Pessoa pessoa;
-    Pessoa pessoadois;
 
     EditText editTextPrimeiroNome;
     EditText editTextSobrenome;
@@ -59,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
         pessoa.setTelefone("981557842");
          */
 
-        pessoadois = new Pessoa();
 
         //Link entre o xml com a activity
 

@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context="view.MainActivity">
 
-
     <TextView
         android:id="@+id/textListaVip"
         android:layout_width="132dp"
@@ -35,7 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textListaVip"
         app:layout_constraintVertical_bias="0.102"
-        android:autofillHints="" />
+         />
 
     <EditText
         android:id="@+id/editTextSobrenome"
@@ -51,7 +50,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPrimeiroNome"
         app:layout_constraintVertical_bias="0.0"
-        android:autofillHints=""/>
+       />
 
     <EditText
         android:id="@+id/editTextCurso"
@@ -67,7 +66,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextSobrenome"
         app:layout_constraintVertical_bias="0.0"
-        android:autofillHints=""/>
+        />
 
     <EditText
         android:id="@+id/editTextTel"
@@ -83,7 +82,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextCurso"
         app:layout_constraintVertical_bias="0.0"
-        android:autofillHints=""/>
+        />
+
+    <TextView
+        android:id="@+id/txtListaSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione um curso..."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTel" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLimpar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTel" />
 
     <Button
         android:id="@+id/btnLimpar"
@@ -104,10 +126,10 @@
         android:text="@string/salvar"
         app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toEndOf="@+id/btnLimpar"
         app:layout_constraintTop_toBottomOf="@+id/editTextTel"
-        app:layout_constraintVertical_bias="0.195" />
+        app:layout_constraintVertical_bias="0.406" />
 
     <Button
         android:id="@+id/btnFinalizar"
@@ -117,31 +139,12 @@
         android:text="@string/finalizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTel" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTel"
+        app:layout_constraintVertical_bias="0.664" />
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txtListaSpinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Selecione um curso"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="529dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
