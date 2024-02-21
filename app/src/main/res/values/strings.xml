@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">appList</string>
+    <string name="lista_vip">Lista VIP</string>
+    <string name="primeironome">PrimeiroNome</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="curso">Curso</string>
+    <string name="telefone">Telefone</string>
+    <string name="limpar">LIMPAR</string>
+    <string name="salvar">SALVAR</string>
+    <string name="finalizar">FINALIZAR</string>
+</resources>
