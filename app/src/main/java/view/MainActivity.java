@@ -13,15 +13,22 @@ import android.widget.Toast;
 import com.example.applist.R;
 
 
+import java.util.List;
+
+import controller.CursoController;
 import controller.PessoaController;
+import model.Curso;
 import model.Pessoa;
 
 public class MainActivity extends AppCompatActivity {
 
 
     PessoaController controller;
+    CursoController cursoController;
 
     Pessoa pessoa;
+
+    List<Curso> listaDeCursos;
 
     EditText editTextPrimeiroNome;
     EditText editTextSobrenome;
@@ -43,12 +50,12 @@ public class MainActivity extends AppCompatActivity {
         //Conforme o modelo, o Layout
 
         controller = new PessoaController(MainActivity.this);
-
         controller.toString();
-
         pessoa = new Pessoa();
-
         controller.buscar(pessoa);
+
+        cursoController = new CursoController();
+        listaDeCursos = cursoController.getListDeCursos();
 
 
         /*
